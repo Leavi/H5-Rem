@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
   <meta charset="UTF-8">
@@ -8,16 +8,17 @@
 </head>
 
 <body style="margin: 0;">
-  <h1>Hello Rem</h1>
-  <p style="font-size: 1rem;">1rem = 10px</p>
-  <p style="font-size: 1.2rem;">1.2rem = 12px</p>
-  <p style="font-size: 1.4rem;">1.4rem = 14px</p>
-  <p style="font-size: 1.5rem;">1.5rem = 15px</p>
-  <p style="font-size: 1.6rem;">1.6rem = 16px</p>
-  <p style="font-size: 1.8rem;">1.8rem = 18px</p>
-  <p style="font-size: 1.6rem;">1rem = 10px，以iphone6/7/8作为视觉稿的标准，适用于设计稿为750px，可以根据屏幕宽度进行自适应。</p>
-  <p style="font-size: 1.6rem;">例如：设计稿为750px的标准，设计稿中某一处宽度为750px，就可以设置为750 / 20 = 37.5，即37.5rem</p>
-  <div style="width: 37.5rem; height: 10rem; background-color: royalblue;"></div>
+  <h1 style="font-size: 1rem;">Hello Rem</h1>
+  <p style="font-size: .32rem;">设计图32px = .32rem</p>
+  <p style="font-size: .36rem;">设计图36px = .36rem</p>
+  <p style="font-size: .42rem;">设计图42px = .42rem</p>
+  <p style="font-size: .48rem;">设计图48px = .48rem</p>
+  <p style="font-size: .54rem;">设计图54px = .54rem</p>
+  <div style="width: 7.5rem; padding: .2rem 0; font-size: .32rem; color: #fff; background-color: royalblue;">
+    <p style="padding: 0 .2rem; box-sizing: border-box; line-height: 1.5; margin: 0;">
+      由于chromium内核在80以前有最小字号限制，在设备逻辑像素除以设计图宽度后商为小数，所以需要为html节点的字体大小扩大100倍。此时rem的计算方式就是，用设计图上的尺寸除以100的商便是相应的rem值。
+    </p>
+  </div>
   <script src="/lib/rem.js"></script>
 </body>
 
